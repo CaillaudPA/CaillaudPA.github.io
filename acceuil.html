@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	 	
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+		<script type="text/javascript" src="js/acceuil.js"></script>
+		<link rel= "stylesheet" type= "text/css" href= "css/acceuil.css" />
+		
+
+	
+		<title>Musée des Beaux-Arts de Nantes : Accueil</title>
+	</head>
+
+	<body>
+
+
+	<h1 id="nomSite">Musée des Beaux-Arts de Nantes</h1>
+	 
+	  <div data-role="header">
+	  	
+
+		<div data-role="navbar">
+	      <ul >
+	        <li><a href="#menuNavigation" data-icon="grid" data-iconpos="top"
+	        		class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Menu</a></li>
+
+	        <li><a href="http://www.nantes.fr" target="_blank" data-icon="star">Ville de Nantes</a></li>
+	        <li><a id="loupeRecherche" href="#" data-icon="search" data-iconpos="top" onclick="afficherInputRecherche()">Recherche</a></li>
+	      </ul>
+	    </div>
+
+
+	    <div data-role="panel" id="menuNavigation" data-display="overlay" >
+	    	<ul data-role="listview" data-inset="false">
+				<li class="itemMenu"> <a href="">Collections</a></li>
+				<li class="itemMenu"> <a href="">Expositions</a></li>
+				<li class="itemMenu"> <a href="">Activités</a></li>
+				<li class="itemMenu"> <a href="">Agenda</a></li>
+				<li class="itemMenu"> <a href="">Publics</a></li>
+				<li class="itemMenu"> <a href="">Pratique</a></li>
+				<li class="itemMenu"> <a href="">Presse</a></li>
+				<li class="itemMenu"> <a href="">Projet musée</a></li>
+			</ul>
+
+	    </div>
+ 
+  <!-- 		
+		<nav id="barreNavigation">
+
+			<ul id="ulBarreNavigation">
+				<li id="liImgMenuDerouler">
+					<img id="menuDerouler" src="image/glyphicons/glyphiconsJustify.png">
+				</li>
+				
+				<li id="liTitreBarreNavigation">
+					<p id="divTitreBarreNavigation">Musée des Beaux-Arts de Nantes</p>
+				</li>
+				
+				<li id="liImgMenuRecherche">
+					<img id="menuRecherche" src="image/glyphicons/glyphiconsSearch.png" onclick="afficherInputRecherche()">	
+				</li>
+			</ul>
+
+			<div >
+			 	<ul id="menuDeroulerSlide">
+			 		<li class="itemMenu">Collections</li>
+			 		<li class="itemMenu">Expositions</li>
+			 		<li class="itemMenu">Activités</li>
+			 		<li class="itemMenu">Agenda</li>
+			 		<li class="itemMenu">Publics</li>
+			 		<li class="itemMenu">Pratique</li>
+			 		<li class="itemMenu">Presse</li>
+			 		<li class="itemMenu">Projet musée</li>
+			 	</ul>
+			</div>
+				
+		</nav>-->
+
+		<div id="separation"></div>
+
+				
+			<div data-role="fieldcontain" id="rechercheDiv">
+			    <input type="search" name="recherche" id="recherche" onblur="enleverInputRecherche()" value="" />
+			</div>
+
+
+			<div id="sectionImage">
+			
+				<a href="http://www.lemasc.fr/exposition-sables-olonne/actualite-actu/de-kandinsky-a-kapoor-les-chemins-de-l-abstraction-collections-du-musee-des-beaux-arts-de-nantes/">
+					<img id="imgPrincipal1" src="image/imagePrincipale/carrousseAbbaye.jpg">
+				</a>
+
+				<a href="">
+					<img id="imgPrincipal2" src="image/imagePrincipale/carrousselVisite.jpg">
+				</a>
+
+				<a href="">
+					<img id="imgPrincipal3" src="image/imagePrincipale/jeunePublic.jpg">
+				</a>
+				
+				<a href="http://www.museedesbeauxarts.nantes.fr/cache/offonce/Accueil/pid/24136;jsessionid=710E1D0D6F1F2E5B63FEDBD7DD848407">
+					<img id="imgPrincipal4" src="image/imagePrincipale/restauration_howard02ter.jpg">
+				</a>
+				
+				<a href="http://www.museedesbeauxarts.nantes.fr/Accueil/Publics/Scolaires">
+					<img id="imgPrincipal5" src="image/imagePrincipale/scolaires_follejournee.jpg">
+				</a>
+			</div>
+
+		<div style="text-align: center;">
+			<table>
+				<td>
+					<th>
+						<a href="https://www.facebook.com/MuseedesBeauxArtsNantes"><img src="image/reseauSociaux/facebook_rond.png"></a>
+					</th>
+					<th>
+						<a href="https://twitter.com/museedArtnantes"><img src="image/reseauSociaux/twitter-rond2.png"></a>
+					</th>
+					<th>
+						<a href="http://www.dailymotion.com/Musee_Beaux_Arts_Nantes"><img src="image/reseauSociaux/dailymotion.png"></a>
+					</th>
+					<th>
+						<a href="https://plus.google.com/102027570623723318063/about"><img src="image/reseauSociaux/googleplus-rond.png"></a>
+					</th>
+					<th>
+						<a href="https://www.pinterest.com/facebookmba/"><img src="image/reseauSociaux/pinterest-logo.jpeg"></a>
+					</th>
+					<th>
+						<a href="https://www.flickr.com/photos/mbanantes/"><img src="image/reseauSociaux/flick.JPG"></a>
+					</th>
+					<th>
+						<a href="https://www.youtube.com/channel/UC-3SdEKl40sgwrRKXeph8Zg"><img src="image/reseauSociaux/youtube.png"></a>
+					</th>
+					<th>
+						<a href="https://www.thinglink.com/user/515138720840548353/scenes"><img src="image/reseauSociaux/ThingLink_logo.jpg"></a>
+					</th>
+				</td>
+			</table>
+		</div>
+	</body>
+</html>

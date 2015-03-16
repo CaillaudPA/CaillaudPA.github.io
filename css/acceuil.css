@@ -1,0 +1,109 @@
+
+/*/////////////////////////////////////
+
+	DEBUT CSS MENU DE NAVIGATION 
+
+/////////////////////////////////////*/
+head{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+body{
+	margin:0;
+}
+
+#nomSite{
+	margin: auto;
+	text-align: center;
+	background-color: #F0F0F0;
+}
+
+
+
+#rechercheDiv{
+	display: none;
+}
+
+#recherche{
+	display: none;
+}
+
+ul#ulMenuNavigation > li{
+	font-size: 1px;
+}
+
+#menuDeroulerSlide{
+	border: 1px solid black;
+	color: black;
+	background-color: #f0f0f0;
+	
+}
+
+#menuNavigation{
+	width: 15%;
+}
+
+.itemMenu{
+	list-style-type: none;
+ 	border: 1px solid black;
+}
+
+
+#ulBarreNavigation>li {
+	display: inline-block;
+}
+
+
+#barreNavigation{
+	/*position: fixed;*/
+	width: 100%;
+}
+
+#sectionImage{
+	text-align: center;
+}
+
+nav{
+
+	background-color: #facc45;	
+}
+
+ul {
+  margin-left:0;
+  padding-left:0;
+  text-align: center; 
+}
+
+ nav > ul > li{
+ 	margin-left: 5px;
+ 	margin-right: 5px;
+ 	padding: 5px;
+ }
+
+ #liImgMenuDerouler{
+ 	position: static;
+ 	float: left;
+ }
+
+#divTitreBarreNavigation{
+ 	margin: auto;
+ }
+
+ #liImgMenuRecherche{
+ 	position: static;
+ 	float: right;
+ }
+
+ #separation{
+
+ }
+
+ /*/////////////////////////////////////
+
+	FIN CSS MENU DE NAVIGATION 
+
+/////////////////////////////////////*/
+
