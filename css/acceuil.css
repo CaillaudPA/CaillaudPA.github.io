@@ -43,7 +43,8 @@ ul#ulMenuNavigation > li{
 }
 
 #menuNavigation{
-	width: 15%;
+	min-width: 130px;
+	max-width: 20%;
 }
 
 .itemMenu{
