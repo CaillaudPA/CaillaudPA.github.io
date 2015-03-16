@@ -1,6 +1,7 @@
 hauteurImgPrincipalOrigine = 943;
 largeurImgPrincipalOrigine = 400;
 ratioImgPrincipal = hauteurImgPrincipalOrigine/largeurImgPrincipalOrigine;
+afficherBarreRecherche = false;
 
 $('document').ready(function(){
 	redimentionnerImage();
@@ -13,17 +14,25 @@ $('document').ready(function(){
 
 function afficherInputRecherche(){
 	if ($('#recherche').css('display') == 'none') {
-	$('#recherche').css('display', 'inline');
-	$('#rechercheDiv').css('display', 'inline');
-	$("recherche").focus();}
+		$('#recherche').css('display', 'inline');
+		$('#rechercheDiv').css('display', 'inline');
+		document.getElementById("recherche").focus();
+		afficherBarreRecherche = true;
+	}
 	
 
 }
 
-// Inutile ?
+
 function enleverInputRecherche(){
-	$('#recherche').css('display', 'none');
-	$('#rechercheDiv').css('display', 'none');
+	if(afficherBarreRecherche == true){
+		$('#recherche').css('display', 'none');
+		$('#rechercheDiv').css('display', 'none');
+		$('#loupeRecherche').removeClass("ui-btn-active");
+		afficherBarreRecherche = false;
+	}
+
+
 }
 
 function redimentionnerImage(){
