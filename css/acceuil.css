@@ -23,6 +23,7 @@ body{
 
 
 
+
 #rechercheDiv{
 	display: none;
 }
@@ -31,9 +32,7 @@ body{
 	display: none;
 }
 
-ul#ulMenuNavigation > li{
-	font-size: 1px;
-}
+
 
 #menuDeroulerSlide{
 	border: 1px solid black;
@@ -45,7 +44,15 @@ ul#ulMenuNavigation > li{
 #menuNavigation{
 	min-width: 130px;
 	max-width: 20%;
+	background-color : rgba(200,200,200,0);
+	
 }
+
+ul#ulMenuNavigation > li{
+	font-size: 1px;
+}
+
+
 
 .itemMenu{
 	list-style-type: none;
