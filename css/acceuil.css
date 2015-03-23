@@ -43,8 +43,7 @@ ul#ulMenuNavigation > li{
 }
 
 #menuNavigation{
-	min-width: 130px;
-	max-width: 20%;
+	width: 15%;
 }
 
 .itemMenu{
@@ -103,7 +102,7 @@ ul {
  }
 
 footer{
-	background-position: center center; 
+	background-position: center; 
 }
 
 
