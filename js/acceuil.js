@@ -8,7 +8,6 @@ $('document').ready(function(){
 	$(window).resize(function() {
 		redimentionnerImage();
 	});
-
 	
 });
 
@@ -77,4 +76,26 @@ function redimensionImage(largeur, hauteur, largeurc, hauteurc) {
     coord[1]=hauteur;
     ratioImgPrincipal = hauteur/largeur
     return(coord);
+}
+
+function recupGet(nomCle){
+
+	var url = document.URL;
+	var tmp = url.split(".html?")[1];
+	tmp = tmp.split("&");
+
+	var positionCle = -1;
+
+	for (var i = tmp.length - 1; i >= 0; i--) {
+		if(tmp[i].search(nomCle)>=0){
+			positionCle = i;
+			break;
+		};
+	};
+
+	if (positionCle == -1) {
+		return "";
+	}else{
+		return tmp[positionCle].split("=")[1];
+	};
 }
