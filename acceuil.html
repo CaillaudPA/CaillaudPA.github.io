@@ -29,18 +29,17 @@
 
 	<body>
 
-
-	<h1 id="nomSite">Musée des Beaux-Arts de Nantes</h1>
+		<a href="index.html" id="nomSite"><h1 >Musée des Beaux-Arts de Nantes</h1></a>
 	 
 	 	 <div data-role="header">
-		<div data-role="navbar" data-theme="c">
-	      <ul >
-	        <li><a href="#menuNavigation" data-icon="grid" data-iconpos="top" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Menu</a></li>
-	        <li><a href="http://www.nantes.fr" target="_blank" data-icon="star">Ville de Nantes</a></li>
-	        <li><a id="loupeRecherche" href="#" data-icon="search" data-iconpos="top" onclick="afficherInputRecherche()" onblur="enleverInputRecherche()">Recherche</a></li>
-	      </ul>
-	    </div>
-		
+			<div data-role="navbar" data-theme="c">
+		      <ul >
+		        <li><a href="#menuNavigation" data-icon="grid" data-iconpos="top" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Menu</a></li>
+		        <li><a href="http://www.nantes.fr" target="_blank" data-icon="star">Ville de Nantes</a></li>
+		        <li><a id="loupeRecherche" href="#" data-icon="search" data-iconpos="top" onclick="afficherInputRecherche()">Recherche</a></li>
+		      </ul>
+		    </div>
+		</div>
 
 	    <div data-role="panel" id="menuNavigation" data-display="overlay">
 	    	<ul data-role="listview" data-inset="false" id="ulMenuNavigation">
@@ -57,8 +56,7 @@
 
 
 
-		<form action="recherche.html" method="GET">
-
+		<form action="pageRecherche.html" method="GET">
 			<div data-role="fieldcontain" id="rechercheDiv">
 			    <input type="search" name="recherche" id="recherche" onblur="enleverInputRecherche()" onsearch="window.location='toto.html'"value="" />
 			</div>

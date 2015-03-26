@@ -10,10 +10,6 @@ $('document').ready(function(){
 	});
 
 
-	$('#recherche').search(function(){
-		rechercheSubmit();		
-	});
-
 });
 
 function afficherInputRecherche(){
@@ -23,8 +19,6 @@ function afficherInputRecherche(){
 		document.getElementById("recherche").focus();
 		afficherBarreRecherche = true;
 	}
-	
-
 }
 
 
@@ -35,8 +29,6 @@ function enleverInputRecherche(){
 		$('#loupeRecherche').removeClass("ui-btn-active");
 		afficherBarreRecherche = false;
 	}
-
-
 }
 
 function redimentionnerImage(){
@@ -83,11 +75,7 @@ function redimensionImage(largeur, hauteur, largeurc, hauteurc) {
     return(coord);
 }
 
-<<<<<<< HEAD
-function rechercheSubmit () {
-	// body...
-	alert($('recherche').value());
-=======
+
 function recupGet(nomCle){
 
 	var url = document.URL;
@@ -108,5 +96,4 @@ function recupGet(nomCle){
 	}else{
 		return tmp[positionCle].split("=")[1];
 	};
->>>>>>> e9eddb3ecbe1e290eb2657ad2b42bd695fe15ea6
 }
