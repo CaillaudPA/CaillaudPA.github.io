@@ -60,6 +60,10 @@ h3 > a{
 	text-decoration:none
 }
 
+.ui-btn-inner{
+    background: rgba(204,244,204,0.9);
+}
+
  /*/////////////////////////////////////
 
 	FIN CSS MENU DE NAVIGATION 

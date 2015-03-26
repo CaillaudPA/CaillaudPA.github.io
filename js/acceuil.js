@@ -10,25 +10,21 @@ $('document').ready(function(){
 	});
 
 
+
+
 });
 
 function afficherInputRecherche(){
-	if ($('#recherche').css('display') == 'none') {
-		$('#recherche').css('display', 'inline');
-		$('#rechercheDiv').css('display', 'inline');
-		document.getElementById("recherche").focus();
-		afficherBarreRecherche = true;
-	}
+	$('#recherche').css('display', 'inline');
+	$('#rechercheDiv').css('display', 'inline');
+	document.getElementById("recherche").focus();
 }
 
 
 function enleverInputRecherche(){
-	if(afficherBarreRecherche == true){
-		$('#recherche').css('display', 'none');
-		$('#rechercheDiv').css('display', 'none');
-		$('#loupeRecherche').removeClass("ui-btn-active");
-		afficherBarreRecherche = false;
-	}
+	$('#recherche').css('display', 'none');
+	$('#rechercheDiv').css('display', 'none');
+	$('#loupeRecherche').removeClass("ui-btn-active");
 }
 
 function redimentionnerImage(){
