@@ -9,7 +9,9 @@ $('document').ready(function(){
 		redimentionnerImage();
 	});
 
-	
+	$('#recherche').search(function(){
+		rechercheSubmit();		
+	});
 });
 
 function afficherInputRecherche(){
@@ -77,4 +79,9 @@ function redimensionImage(largeur, hauteur, largeurc, hauteurc) {
     coord[1]=hauteur;
     ratioImgPrincipal = hauteur/largeur
     return(coord);
+}
+
+function rechercheSubmit () {
+	// body...
+	alert($('recherche').value());
 }
