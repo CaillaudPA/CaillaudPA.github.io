@@ -5,14 +5,11 @@
 
 /////////////////////////////////////*/
 
-body{
-	margin:0;
-}
-
 #nomSite{
 	margin: auto;
 	text-align: center;
-	background-color: #F0F0F0;
+	background: #F0F0F0;
+	text-decoration:none
 }
 
 #rechercheDiv{
@@ -26,7 +23,7 @@ body{
 #menuNavigation{
 	min-width: 130px;
 	max-width: 20%;
-	background-color : rgba(255,255,255,0);
+	background: rgba(255,255,255,0);
 }
 
 .itemMenu{
@@ -35,23 +32,12 @@ body{
 }
 
 
-#ulBarreNavigation>li {
-	display: inline-block;
-}
-
-
 #barreNavigation{
-	/*position: fixed;*/
 	width: 100%;
 }
 
 #sectionImage{
 	text-align: center;
-}
-
-nav{
-
-	background-color: #facc45;	
 }
 
 ul {
@@ -66,19 +52,17 @@ ul {
  	padding: 5px;
  }
 
- #liImgMenuDerouler{
- 	position: static;
- 	float: left;
- }
+h3 > a{
+	width: 100%;
+}
 
-#divTitreBarreNavigation{
- 	margin: auto;
- }
+.resultatRecherche{
+	text-decoration:none
+}
 
- #liImgMenuRecherche{
- 	position: static;
- 	float: right;
- }
+.ui-btn-inner{
+    background: rgba(204,244,204,0.9);
+}
 
  /*/////////////////////////////////////
 

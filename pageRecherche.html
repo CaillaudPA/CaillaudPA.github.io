@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	 	
+
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--
+		Jquery
+		-->
+		<script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+		<!--
+		Jquery mobile
+		-->
+		<script src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+		
+		<!--
+		perso
+		-->
+		<script type="text/javascript" src="js/acceuil.js"></script>
+		<link rel= "stylesheet" type= "text/css" href= "css/acceuil.css"/>
+		<link rel="SHORTCUT ICON" href="image/favicon.ico">	
+
+	
+		<title>Musée des Beaux-Arts de Nantes : Accueil</title>
+	</head>
+
+	<body>
+	
+		<a href="index.html" id="nomSite"><h1 >Musée des Beaux-Arts de Nantes</h1></a>
+		 
+	 	 <div data-role="header">
+			<div data-role="navbar" data-theme="c">
+		      <ul >
+		        <li><a href="#menuNavigation" data-icon="grid" data-iconpos="top" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Menu</a></li>
+		        <li><a href="http://www.nantes.fr" target="_blank" data-icon="star">Ville de Nantes</a></li>
+		        <li><a id="loupeRecherche" href="#" data-icon="search" data-iconpos="top" onclick="afficherInputRecherche()">Recherche</a></li>
+		      </ul>
+		    </div>
+		</div>
+
+
+
+	 	<div id="sectionPrincipal">
+
+		    <div data-role="panel" id="menuNavigation" data-display="overlay">
+		    	<ul data-role="listview" data-inset="false" id="ulMenuNavigation">
+					<li class="itemMenu"> <a href="">Collections</a></li>
+					<li class="itemMenu"> <a href="">Expositions</a></li>
+					<li class="itemMenu"> <a href="">Activités</a></li>
+					<li class="itemMenu"> <a href="">Agenda</a></li>
+					<li class="itemMenu"> <a href="">Publics</a></li>
+					<li class="itemMenu"> <a href="">Pratique</a></li>
+					<li class="itemMenu"> <a href="">Presse</a></li>
+					<li class="itemMenu"> <a href="">Projet musée</a></li>
+				</ul>
+
+		    </div>
+
+
+		<form action="pageRecherche.html" method="GET">
+			<div data-role="fieldcontain" id="rechercheDiv">
+			    <input type="search" name="recherche" id="recherche" onblur="enleverInputRecherche()" onsearch="window.location='toto.html'" value=""/>
+			</div>
+		</form>
+
+			<div data-role="collapsible" data-theme="b">
+			  	 <h3>Fascinante Italie</h3>
+			   	<a href="" class="resultatRecherche">
+			   		<p>programme de restauration mis en œuvre par Napoléon III eut sans doute pour conséquence, pour la vingtaine d’années que dura le Second Empire, de redonner au voyage en Italie un rôle de première importance dans l’apprentissage des jeunes artistes français, alors même qu’il avait été considéré comme superflu par une grande partie de la génération des romantiques, et particulièrement par Delacroix.</p>
+			   	</a>
+			</div>
+			<div data-role="collapsible" data-theme="b">
+			   	<h3>Collection du musée des beaux-arts</h3>
+			   	<a href="" class="resultatRecherche">
+			   		<p>Hors les murs Petit Palais, Paris ... ... Le musée actuellement fermé pour rénovation jusqu'à la fin de l'an...nvite au Petit Palais pour Changement de décor. A cette occasi...fs d'oeuvre sortent des collections: - Jean - Auguste Dominique Ingres, Portrait de Mme de Senonn......ames Tissot, Portrait de Mme de Senonnes, copie en grisaille d'après Ingr...igmar Polke, Sans titre - Horace Vernet, La Ballade de Léno...ean-Baptiste-Camille Carot, Démocrite et les Abdéritains - Paysa...aul Delaroche, L'Enfance de Pic de la Mirando...ean-Léon Gérôme, Le Prisonni...istoire du Portrait de Mme de Senonnes de Inges L’extraordinaire Portrait de Madame de Senonnes par Ingres (1814) fut découvert par hasard chez un brocanteur à Angers...acquis immédiatement par le musée. Le tableau était resté en Anjou dans la famille, qui le mit en vente chez un antiquaire. Née Marie Marcoz, le modèle après avoir divorcé, épousa l’envoyé de Napoléon à Rome, le vicomte Alexandre de Senonnes. Selon une rumeur, la belle-famille du modèle.</p>
+			   	</a>
+			</div>
+
+			<div data-role="collapsible" data-theme="b">
+			   <h3>Visites des collections</h3>
+			   	<a href="" class="resultatRecherche">
+			  		<p>Diéterle Jules et Derichweiler Gérard - Assiette à dessert du service pompéien du Prince Jérôme Napoléon, 1856-... ... /shared/EXPOSITIONS/La-lyre-d_ivoire-Picou-et-les-Neo-Grecs/activites/sevres_service_pompeien_carrousel.jpg ...</p>
+			   	</a>
+			</div>
+
+		</div> <!-- /sectionPrincipal -->
+
+		<table align="center">
+			<td>
+				<th>
+					<a href="https://www.facebook.com/MuseedesBeauxArtsNantes"><img src="image/reseauSociaux/facebook_rond.png"></a>
+				</th>
+				<th>
+					<a href="https://twitter.com/museedArtnantes"><img src="image/reseauSociaux/twitter-rond2.png"></a>
+				</th>
+				<th>
+					<a href="http://www.dailymotion.com/Musee_Beaux_Arts_Nantes"><img src="image/reseauSociaux/dailymotion.png"></a>
+				</th>
+				<th>
+					<a href="https://www.youtube.com/channel/UC-3SdEKl40sgwrRKXeph8Zg"><img src="image/reseauSociaux/youtube.png"></a>
+				</th>
+				<th>
+					<a href="https://www.thinglink.com/user/515138720840548353/scenes"><img src="image/reseauSociaux/ThingLink_logo.jpg"></a>
+				</th>
+				<th>
+					<a href="https://plus.google.com/102027570623723318063/about"><img src="image/reseauSociaux/googleplus-rond.png"></a>
+				</th>
+				<th>
+					<a href="https://www.pinterest.com/facebookmba/"><img src="image/reseauSociaux/pinterest-logo.jpeg"></a>
+				</th>
+				<th>
+					<a href="https://www.flickr.com/photos/mbanantes/"><img src="image/reseauSociaux/flick.JPG"></a>
+				</th>
+			</td>
+		</table>
+	</body>
+</html>
