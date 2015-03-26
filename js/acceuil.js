@@ -9,9 +9,11 @@ $('document').ready(function(){
 		redimentionnerImage();
 	});
 
+
 	$('#recherche').search(function(){
 		rechercheSubmit();		
 	});
+
 });
 
 function afficherInputRecherche(){
@@ -81,7 +83,30 @@ function redimensionImage(largeur, hauteur, largeurc, hauteurc) {
     return(coord);
 }
 
+<<<<<<< HEAD
 function rechercheSubmit () {
 	// body...
 	alert($('recherche').value());
+=======
+function recupGet(nomCle){
+
+	var url = document.URL;
+	var tmp = url.split(".html?")[1];
+	tmp = tmp.split("&");
+
+	var positionCle = -1;
+
+	for (var i = tmp.length - 1; i >= 0; i--) {
+		if(tmp[i].search(nomCle)>=0){
+			positionCle = i;
+			break;
+		};
+	};
+
+	if (positionCle == -1) {
+		return "";
+	}else{
+		return tmp[positionCle].split("=")[1];
+	};
+>>>>>>> e9eddb3ecbe1e290eb2657ad2b42bd695fe15ea6
 }
