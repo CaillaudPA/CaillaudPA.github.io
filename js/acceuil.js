@@ -1,7 +1,6 @@
-hauteurImgPrincipalOrigine = 943;
-largeurImgPrincipalOrigine = 400;
-ratioImgPrincipal = hauteurImgPrincipalOrigine/largeurImgPrincipalOrigine;
-afficherBarreRecherche = false;
+var hauteurImgPrincipalOrigine = 943;
+var largeurImgPrincipalOrigine = 400;
+var ratioImgPrincipal = hauteurImgPrincipalOrigine/largeurImgPrincipalOrigine;
 
 $('document').ready(function(){
 	redimentionnerImage();
