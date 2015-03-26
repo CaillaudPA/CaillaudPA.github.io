@@ -1,7 +1,7 @@
-hauteurImgPrincipalOrigine = 943;
-largeurImgPrincipalOrigine = 400;
-ratioImgPrincipal = hauteurImgPrincipalOrigine/largeurImgPrincipalOrigine;
-afficherBarreRecherche = false;
+var hauteurImgPrincipalOrigine = 943;
+var largeurImgPrincipalOrigine = 400;
+var ratioImgPrincipal = hauteurImgPrincipalOrigine/largeurImgPrincipalOrigine;
+var afficherBarreRecherche = false;
 
 $('document').ready(function(){
 	redimentionnerImage();
@@ -83,11 +83,12 @@ function redimensionImage(largeur, hauteur, largeurc, hauteurc) {
     return(coord);
 }
 
-<<<<<<< HEAD
+
 function rechercheSubmit () {
 	// body...
 	alert($('recherche').value());
-=======
+}
+
 function recupGet(nomCle){
 
 	var url = document.URL;
@@ -108,5 +109,5 @@ function recupGet(nomCle){
 	}else{
 		return tmp[positionCle].split("=")[1];
 	};
->>>>>>> e9eddb3ecbe1e290eb2657ad2b42bd695fe15ea6
+
 }
