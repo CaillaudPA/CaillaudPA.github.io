@@ -57,18 +57,20 @@
 		    </div> <!-- /panel -->
 		</div>
 
+			
+
 		<div data-role="main" class="ui-content">
 			<div class="headArticle">
 				<h2>Collections</h2>
-				<div data-role="navbar" data-theme="ui-body-a">
-			      <ul >
-			        <li><a href="#">Présentation</a></li>
-			        <li><a href="#">Visite virtuelle</a></li>
-			        <li><a href="#" class="ui-btn-active ui-state-persist">Vie des collections</a></li>
-			        <li><a href="#">Oeuvres en ligne</a></li>
-			        <li><a href="#">Documentation</a></li>
-			      </ul>
-			    </div>
+				<form>
+				<select name="select-native-s" id="select-native-s">
+					<option value="collection">Vie des collections</option>
+			        <option value="presentation">Présentation</option>
+			        <option value="visiteVirtuelle">Visite virtuelle</option>		        
+			        <option value="oeuvreneligne">Oeuvres en ligne</option>
+			        <option value="doc">Documentation</option>
+	    		</select>
+		</form>	
 			</div>
 			<p class="bold">
 				Hors les murs Petit Palais, Paris<br/>
