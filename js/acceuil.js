@@ -94,13 +94,4 @@ function recupGet(nomCle){
 	}else{
 		return tmp[positionCle].split("=")[1];
 	};
-<<<<<<< HEAD
-}
-
-
-function resetRecherche(){
-	enleverInputRecherche();
-=======
-
->>>>>>> 4a7fd522a58a4bb55ad39b12e09ad356538cecf7
 }
