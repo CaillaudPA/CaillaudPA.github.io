@@ -9,10 +9,6 @@ $('document').ready(function(){
 	$(window).resize(function() {
 		redimentionnerImage();
 	});
-
-
-
-
 });
 
 function afficherInputRecherche(){
@@ -34,23 +30,15 @@ function changementPage(){
 }
 
 function redimentionnerImage(){
-	newWidth = $(window).width();
-	newHeight = $(window).width();
-	
-	if(newWidth > largeurImgPrincipalOrigine){
-		newWidth = largeurImgPrincipalOrigine;
-	}
-
-	if(newHeight > hauteurImgPrincipalOrigine){
-		newHeight = hauteurImgPrincipalOrigine;
-	}
-
-	var coord = redimensionImage(largeurImgPrincipalOrigine,hauteurImgPrincipalOrigine,newWidth,newHeight);
-
-
 	$("a [id*=imgPrincipal]").each(function (){
-		this.setAttribute("width",coord[1]);
-		this.setAttribute("height",coord[0]);
+		largeur = $(window).width();
+
+		var coord = redimensionImage($(this).width(), $(this).height(), $(window).width(), $(window).height());
+		alert("index");
+		if(coord[1]<800){
+			this.setAttribute("width",coord[0]);
+			this.setAttribute("height",coord[1]);
+		}
 	});
 }
 
@@ -100,3 +88,10 @@ function recupGet(nomCle){
 	};
 }
 
+var index = 0;
+function reloadJS(){
+	var scriptElement = document.createElement('script');
+	scriptElement.type = 'text/javascript';
+	scriptElement.src = src + '?' + index++;
+	document.getElementsByTagName('head')[0].appendChild(scriptElement);
+}

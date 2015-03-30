@@ -65,6 +65,18 @@ h3 > a{
 	margin-right:auto;
 }
 
+.headArticle{
+	text-align: center;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.divImg{
+	text-align: center;
+}
+
  /*/////////////////////////////////////
 
 	FIN CSS MENU DE NAVIGATION 
