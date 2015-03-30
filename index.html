@@ -58,7 +58,7 @@
 
 
 
-		<form action="pageRecherche.html" method="GET" onsubmit="resetRecherche()">
+		<form action="pageRecherche.html" method="GET" onsubmit="changementPage()">
 			<div data-role="fieldcontain" id="rechercheDiv">
 			    <input type="search" name="recherche" id="recherche" onblur="enleverInputRecherche()" value="" />
 			</div>
@@ -88,8 +88,8 @@
 		</div><!-- /sectionImage -->
 
 
-		<footer>
-			<table id="tableReseau">
+		<div id="divReseau">
+			<table id="tableReseau"  style="text-align:center;">
 				<tr>
 					<th>
 						<a href="https://www.facebook.com/MuseedesBeauxArtsNantes"><img alt="facebook" src="image/reseauSociaux/facebook_rond.png"></a>
@@ -117,6 +117,6 @@
 					</th>
 				</tr>
 			</table> <!-- /tableReseau -->
-		</footer>
+		</div>
 	</body>
 </html>
