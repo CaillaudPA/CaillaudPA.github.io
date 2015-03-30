@@ -1,17 +1,5 @@
-var hauteurImgPrincipalOrigine = 943;
-var largeurImgPrincipalOrigine = 400;
-var ratioImgPrincipal = hauteurImgPrincipalOrigine/largeurImgPrincipalOrigine;
-
-var afficherBarreRecherche = false;
 
 $('document').ready(function(){
-	redimentionnerImage();
-	$(window).resize(function() {
-		redimentionnerImage();
-	});
-
-
-
 
 });
 
@@ -28,6 +16,7 @@ function enleverInputRecherche(){
 	$('#loupeRecherche').removeClass("ui-btn-active");
 }
 
+<<<<<<< HEAD
 function redimentionnerImage(){
 	newWidth = $(window).width();
 	newHeight = $(window).width();
@@ -97,4 +86,8 @@ function recupGet(nomCle){
 	}else{
 		return tmp[positionCle].split("=")[1];
 	};
+
+function changementPage(){
+	enleverInputRecherche();
+
 }

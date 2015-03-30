@@ -65,6 +65,24 @@ h3 > a{
 	margin-right:auto;
 }
 
+.headArticle{
+	text-align: center;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.divImg{
+	text-align: center;
+}
+
+@media screen and (max-width: 6400px){
+	p{
+		font-size: 10em;
+	}
+}
+
  /*/////////////////////////////////////
 
 	FIN CSS MENU DE NAVIGATION 

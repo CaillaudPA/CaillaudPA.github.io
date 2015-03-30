@@ -31,27 +31,15 @@ function changementPage(){
 }
 
 function redimentionnerImage(){
-	newWidth = $(window).width();
-	newHeight = $(window).width();
-	
-	if(newWidth > largeurImgPrincipalOrigine){
-		newWidth = largeurImgPrincipalOrigine;
-	}
-
-	if(newHeight > hauteurImgPrincipalOrigine){
-		newHeight = hauteurImgPrincipalOrigine;
-	}
-
-	var coord = redimensionImage(largeurImgPrincipalOrigine,hauteurImgPrincipalOrigine,newWidth,newHeight);
-
-
 	$("a [id*=imgPrincipal]").each(function (){
-		this.setAttribute("width",coord[1]);
-		this.setAttribute("height",coord[0]);
+
+		var coord = redimensionImage($(this).width(), $(this).height(), $(window).width(), $(window).height());
+		if(coord[0]<800){
+			this.setAttribute("width",coord[0]);
+			this.setAttribute("height",coord[1]);
+		}
 	});
 }
-
-
 
 function redimensionImage(largeur, hauteur, largeurc, hauteurc) {
     coord=new Array(2);
@@ -73,27 +61,3 @@ function redimensionImage(largeur, hauteur, largeurc, hauteurc) {
     ratioImgPrincipal = hauteur/largeur
     return(coord);
 }
-
-
-function recupGet(nomCle){
-
-	var url = document.URL;
-	var tmp = url.split(".html?")[1];
-	tmp = tmp.split("&");
-
-	var positionCle = -1;
-
-	for (var i = tmp.length - 1; i >= 0; i--) {
-		if(tmp[i].search(nomCle)>=0){
-			positionCle = i;
-			break;
-		};
-	};
-
-	if (positionCle == -1) {
-		return "";
-	}else{
-		return tmp[positionCle].split("=")[1];
-	};
-}
-
