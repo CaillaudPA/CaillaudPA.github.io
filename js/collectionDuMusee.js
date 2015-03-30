@@ -1,3 +1,8 @@
+var hauteurImgPrincipalOrigine = 943;
+var largeurImgPrincipalOrigine = 400;
+var ratioImgPrincipal = hauteurImgPrincipalOrigine/largeurImgPrincipalOrigine;
+
+var afficherBarreRecherche = false;
 
 $('document').ready(function(){
 	redimentionnerImage();
@@ -17,6 +22,7 @@ function enleverInputRecherche(){
 	$('#recherche').css('display', 'none');
 	$('#rechercheDiv').css('display', 'none');
 	$('#loupeRecherche').removeClass("ui-btn-active");
+	
 }
 
 function changementPage(){
@@ -25,17 +31,14 @@ function changementPage(){
 
 function redimentionnerImage(){
 	$("a [id*=imgPrincipal]").each(function (){
-		largeur = $(window).width();
 
 		var coord = redimensionImage($(this).width(), $(this).height(), $(window).width(), $(window).height());
-		if(coord[1]<800){
+		if(coord[0]<800){
 			this.setAttribute("width",coord[0]);
 			this.setAttribute("height",coord[1]);
 		}
 	});
 }
-
-
 
 function redimensionImage(largeur, hauteur, largeurc, hauteurc) {
     coord=new Array(2);

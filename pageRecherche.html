@@ -32,8 +32,7 @@
 	<body>
 		<a href="index.html" id="nomSite"><h1 >Musée des Beaux-Arts de Nantes</h1></a>
 	 
-	 	 <div data-role="header">
-		
+	 	<div data-role="header">
 			<div data-role="navbar" data-theme="c">
 		      <ul >
 		        <li><a href="#menuNavigation" data-icon="grid" data-iconpos="top" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" data-theme="b">Menu</a></li>
@@ -41,8 +40,6 @@
 		        <li><a id="loupeRecherche" href="#" data-icon="search" data-iconpos="top" onclick="afficherInputRecherche()" data-theme="b">Recherche</a></li>
 		      </ul>
 		    </div>
-		  
-		
 
 		    <div data-role="panel" id="menuNavigation" data-display="overlay">
 		    	<ul data-role="listview" data-inset="false" id="ulMenuNavigation">
@@ -58,34 +55,35 @@
 		    </div> <!-- /panel -->
 	    </div> <!-- header -->
 
+	    <div data-role="content">
+			<form action="pageRecherche.html" method="GET">
+				<div data-role="fieldcontain" id="rechercheDiv">
+				    <input type="search" name="recherche" id="recherche" onblur="enleverInputRecherche()" value="" />
+				</div>
+			</form>
 
-		<form action="pageRecherche.html" method="GET">
-			<div data-role="fieldcontain" id="rechercheDiv">
-			    <input type="search" name="recherche" id="recherche" onblur="enleverInputRecherche()" value="" />
-			</div>
-		</form>
-
-			<div data-role="collapsible" data-theme="a">
-			  	 <h3>Fascinante Italie</h3>
-			   	<a href="" class="resultatRecherche">
-			   		<p>Le programme de restauration mis en œuvre par Napoléon III eut sans doute pour conséquence, pour la vingtaine d’années que dura le Second Empire, de redonner au voyage en Italie un rôle de première importance dans l’apprentissage des jeunes artistes français, alors même qu’il avait été considéré comme superflu par une grande partie de la génération des romantiques, et particulièrement par Delacroix.</p>
-			   	</a>
+			<div data-role="collapsible" data-theme="c">
+				<h3>Fascinante Italie</h3>
+				<a href="" class="resultatRecherche">
+				   	<p>Le programme de restauration mis en œuvre par Napoléon III eut sans doute pour conséquence, pour la vingtaine d’années que dura le Second Empire, de redonner au voyage en Italie un rôle de première importance dans l’apprentissage des jeunes artistes français, alors même qu’il avait été considéré comme superflu par une grande partie de la génération des romantiques, et particulièrement par Delacroix.</p>
+				</a>
 			</div>
 			<div data-role="collapsible" data-theme="a">
 			   	<h3>Collection du musée des beaux-arts</h3>
-			   	<a href="collectionDuMusee.html" class="resultatRecherche">
-			   		<p>Hors les murs Petit Palais, Paris ... Le musée actuellement fermé pour rénovation jusqu'à la fin de l'année ... A cette occasion ...Jean - Auguste Dominique Ingres, portrait de Mme de Senonnes - Horace Vernet - Jean-Baptiste-Camille Carot, Démocrite et les Abdéritains - L'Enfance de Pic de la Mirando... Le tableau était resté en Anjou dans la famille, qui le mit en vente chez un antiquaire. Née Marie Marcoz, le modèle après avoir divorcé, épousa l’envoyé de Napoléon à Rome, le vicomte Alexandre de Senonnes. Selon une rumeur, la belle-famille du modèle.</p>
-			   	</a>
+				<a href="collectionDuMusee.html" class="resultatRecherche">
+				   	<p>Hors les murs Petit Palais, Paris ... Le musée actuellement fermé pour rénovation jusqu'à la fin de l'année ... A cette occasion ...Jean - Auguste Dominique Ingres, portrait de Mme de Senonnes - Horace Vernet - Jean-Baptiste-Camille Carot, Démocrite et les Abdéritains - L'Enfance de Pic de la Mirando... Le tableau était resté en Anjou dans la famille, qui le mit en vente chez un antiquaire. Née Marie Marcoz, le modèle après avoir divorcé, épousa l’envoyé de Napoléon à Rome, le vicomte Alexandre de Senonnes. Selon une rumeur, la belle-famille du modèle.</p>
+				</a>
 			</div>
 
 			<div data-role="collapsible" data-theme="a">
-			   <h3>Visites des collections</h3>
-			   	<a href="" class="resultatRecherche">
-			  		<p>Diéterle Jules et Derichweiler Gérard - Assiette à dessert du service pompéien du Prince Jérôme Napoléon, 1856 ... </p>
-			   	</a>
+				<h3>Visites des collections</h3>
+				<a href="" class="resultatRecherche">
+				  	<p>Diéterle Jules et Derichweiler Gérard - Assiette à dessert du service pompéien du Prince Jérôme Napoléon, 1856 ... </p>
+				</a>
 			</div>
+		</div><!-- /content -->
 			
-		<div id="divReseau">
+		<div data-role="footer">
 			<table id="tableReseau">
 				<tr>
 					<th>
@@ -114,6 +112,6 @@
 					</th>
 				</tr>
 			</table> <!-- /tableReseau -->
-		</div> <!-- /divReseau -->
+		</div> <!-- /div footer -->
 	</body>
 </html>

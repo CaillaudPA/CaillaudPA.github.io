@@ -40,8 +40,6 @@ function redimentionnerImage(){
 	});
 }
 
-
-
 function redimensionImage(largeur, hauteur, largeurc, hauteurc) {
     coord=new Array(2);
     ratio=hauteur/largeur;
@@ -61,35 +59,4 @@ function redimensionImage(largeur, hauteur, largeurc, hauteurc) {
     coord[1]=hauteur;
     ratioImgPrincipal = hauteur/largeur
     return(coord);
-}
-
-
-function recupGet(nomCle){
-
-	var url = document.URL;
-	var tmp = url.split(".html?")[1];
-	tmp = tmp.split("&");
-
-	var positionCle = -1;
-
-	for (var i = tmp.length - 1; i >= 0; i--) {
-		if(tmp[i].search(nomCle)>=0){
-			positionCle = i;
-			break;
-		};
-	};
-
-	if (positionCle == -1) {
-		return "";
-	}else{
-		return tmp[positionCle].split("=")[1];
-	};
-}
-
-var index = 0;
-function reloadJS(){
-	var scriptElement = document.createElement('script');
-	scriptElement.type = 'text/javascript';
-	scriptElement.src = src + '?' + index++;
-	document.getElementsByTagName('head')[0].appendChild(scriptElement);
 }

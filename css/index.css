@@ -77,6 +77,12 @@ h3 > a{
 	text-align: center;
 }
 
+@media screen and (max-width: 6400px){
+	p{
+		font-size: 10em;
+	}
+}
+
  /*/////////////////////////////////////
 
 	FIN CSS MENU DE NAVIGATION 

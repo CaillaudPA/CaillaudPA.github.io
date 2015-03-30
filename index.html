@@ -3,7 +3,6 @@
 	<head>
 	 	
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 		<!--
@@ -20,7 +19,7 @@
 		perso
 		-->
 		<script type="text/javascript" src="js/index.js"></script>
-		<link rel= "stylesheet" type= "text/css" href= "css/index.css"/>
+		<link rel= "stylesheet" media="screen and (max-width:6400px)" type= "text/css" href= "css/index.css"/>
 		
 
 		<link rel="SHORTCUT ICON" href="image/favicon.ico"/>
@@ -58,38 +57,39 @@
 	    </div> <!-- header -->
 
 
+	    <div data-role="content"> 
+			<form action="pageRecherche.html" method="GET" onsubmit="changementPage()">
+				<div data-role="fieldcontain" id="rechercheDiv">
+				    <input type="search" name="recherche" id="recherche" onblur="enleverInputRecherche()" value="" />
+				</div>
+			</form>
 
-		<form action="pageRecherche.html" method="GET" onsubmit="changementPage()">
-			<div data-role="fieldcontain" id="rechercheDiv">
-			    <input type="search" name="recherche" id="recherche" onblur="enleverInputRecherche()" value="" />
-			</div>
-		</form>
+			<div id="sectionImage">
+			
+				<a href="http://www.lemasc.fr/exposition-sables-olonne/actualite-actu/de-kandinsky-a-kapoor-les-chemins-de-l-abstraction-collections-du-musee-des-beaux-arts-de-nantes/">
+					<img id="imgPrincipal1" alt="carrousseAbbaye" src="image/imagePrincipale/carrousseAbbaye.jpg"/>
+				</a>
 
-		<div id="sectionImage">
-		
-			<a href="http://www.lemasc.fr/exposition-sables-olonne/actualite-actu/de-kandinsky-a-kapoor-les-chemins-de-l-abstraction-collections-du-musee-des-beaux-arts-de-nantes/">
-				<img id="imgPrincipal1" alt="carrousseAbbaye" src="image/imagePrincipale/carrousseAbbaye.jpg"/>
-			</a>
+				<a href="">
+					<img id="imgPrincipal2" alt="carrousselVisite" src="image/imagePrincipale/carrousselVisite.jpg"/>
+				</a>
 
-			<a href="">
-				<img id="imgPrincipal2" alt="carrousselVisite" src="image/imagePrincipale/carrousselVisite.jpg"/>
-			</a>
-
-			<a href="">
-				<img id="imgPrincipal3" alt="jeunePublic" src="image/imagePrincipale/jeunePublic.jpg"/>
-			</a>
-				
-			<a href="http://www.museedesbeauxarts.nantes.fr/cache/offonce/Accueil/pid/24136;jsessionid=710E1D0D6F1F2E5B63FEDBD7DD848407">
-				<img id="imgPrincipal4" alt="restauration_howard02ter" src="image/imagePrincipale/restauration_howard02ter.jpg"/>
-			</a>
-				
-			<a href="http://www.museedesbeauxarts.nantes.fr/Accueil/Publics/Scolaires">
-				<img id="imgPrincipal5" alt="scolaires_follejournee" src="image/imagePrincipale/scolaires_follejournee.jpg"/>
-			</a>
-		</div><!-- /sectionImage -->
+				<a href="">
+					<img id="imgPrincipal3" alt="jeunePublic" src="image/imagePrincipale/jeunePublic.jpg"/>
+				</a>
+					
+				<a href="http://www.museedesbeauxarts.nantes.fr/cache/offonce/Accueil/pid/24136;jsessionid=710E1D0D6F1F2E5B63FEDBD7DD848407">
+					<img id="imgPrincipal4" alt="restauration_howard02ter" src="image/imagePrincipale/restauration_howard02ter.jpg"/>
+				</a>
+					
+				<a href="http://www.museedesbeauxarts.nantes.fr/Accueil/Publics/Scolaires">
+					<img id="imgPrincipal5" alt="scolaires_follejournee" src="image/imagePrincipale/scolaires_follejournee.jpg"/>
+				</a>
+			</div><!-- /sectionImage -->
+		</div><!-- /div content -->
 
 
-		<div id="divReseau">
+		<div data-role="footer">
 			<table id="tableReseau">
 				<tr>
 					<th>
@@ -118,6 +118,6 @@
 					</th>
 				</tr>
 			</table> <!-- /tableReseau -->
-		</div> <!-- /divReseau -->
+		</div> <!-- /div footer -->
 	</body>
 </html>
