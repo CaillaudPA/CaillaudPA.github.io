@@ -34,7 +34,6 @@ function redimentionnerImage(){
 		largeur = $(window).width();
 
 		var coord = redimensionImage($(this).width(), $(this).height(), $(window).width(), $(window).height());
-		alert("index");
 		if(coord[1]<800){
 			this.setAttribute("width",coord[0]);
 			this.setAttribute("height",coord[1]);
