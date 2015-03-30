@@ -57,7 +57,11 @@ h3 > a{
 }
 
 .resultatRecherche{
-	text-decoration:none
+	text-decoration:none;
+}
+
+#tableReseau{
+	vertical-align: center;
 }
 
 
