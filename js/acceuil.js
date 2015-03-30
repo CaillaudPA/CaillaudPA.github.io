@@ -92,3 +92,8 @@ function recupGet(nomCle){
 		return tmp[positionCle].split("=")[1];
 	};
 }
+
+
+function resetRecherche(){
+	enleverInputRecherche();
+}

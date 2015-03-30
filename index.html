@@ -29,7 +29,7 @@
 
 	<body>
 
-		<a href="acceuil.html" id="nomSite"><h1 >Musée des Beaux-Arts de Nantes</h1></a>
+		<a href="index.html" id="nomSite"><h1 >Musée des Beaux-Arts de Nantes</h1></a>
 	 
 	 	 <div data-role="header">
 			<div data-role="navbar" data-theme="c">
@@ -56,9 +56,9 @@
 
 
 
-		<form action="pageRecherche.html" method="GET">
+		<form action="pageRecherche.html" method="GET" onsubmit="resetRecherche()">
 			<div data-role="fieldcontain" id="rechercheDiv">
-			    <input type="search" name="recherche" id="recherche" onblur="enleverInputRecherche()" onsearch="window.location='toto.html'"value="" />
+			    <input type="search" name="recherche" id="recherche" onblur="enleverInputRecherche()" value="" />
 			</div>
 		</form>
 
