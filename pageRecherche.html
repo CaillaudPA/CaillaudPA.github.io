@@ -29,11 +29,11 @@
 		<title>Musée des Beaux-Arts de Nantes : Accueil</title>
 	</head>
 
-	<body >
-	
+	<body>
 		<a href="index.html" id="nomSite"><h1 >Musée des Beaux-Arts de Nantes</h1></a>
-		 
-	 	 <div data-role="header">
+	 
+	 	 <div id="header">
+		
 			<div data-role="navbar" data-theme="c">
 		      <ul >
 		        <li><a href="#menuNavigation" data-icon="grid" data-iconpos="top" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" data-theme="b">Menu</a></li>
@@ -41,11 +41,8 @@
 		        <li><a id="loupeRecherche" href="#" data-icon="search" data-iconpos="top" onclick="afficherInputRecherche()" data-theme="b">Recherche</a></li>
 		      </ul>
 		    </div>
+		  
 		
-
-
-
-	 	<div id="sectionPrincipal">
 
 		    <div data-role="panel" id="menuNavigation" data-display="overlay">
 		    	<ul data-role="listview" data-inset="false" id="ulMenuNavigation">
@@ -58,8 +55,8 @@
 					<li class="itemMenu"> <a href="">Presse</a></li>
 					<li class="itemMenu"> <a href="">Projet musée</a></li>
 				</ul>
-				</div>
-		    </div>
+		    </div> <!-- /panel -->
+	    </div> <!-- header -->
 
 
 		<form action="pageRecherche.html" method="GET">
@@ -87,38 +84,36 @@
 			  		<p>Diéterle Jules et Derichweiler Gérard - Assiette à dessert du service pompéien du Prince Jérôme Napoléon, 1856 ... </p>
 			   	</a>
 			</div>
-
-		</div> <!-- /sectionPrincipal -->
-
+			
 		<div id="divReseau">
 			<table id="tableReseau">
 				<tr>
 					<th>
-						<a href="https://www.facebook.com/MuseedesBeauxArtsNantes"><img alt="facebook" src="image/reseauSociaux/facebook_rond.png"></a>
+						<a href="https://www.facebook.com/MuseedesBeauxArtsNantes"><img alt="facebook" src="image/reseauSociaux/facebook_rond.png"/></a>
 					</th>
 					<th>
-						<a href="https://twitter.com/museedArtnantes"><img alt="twitter" src="image/reseauSociaux/twitter-rond2.png"></a>
+						<a href="https://twitter.com/museedArtnantes"><img alt="twitter" src="image/reseauSociaux/twitter-rond2.png"/></a>
 					</th>
 					<th>
-						<a href="http://www.dailymotion.com/Musee_Beaux_Arts_Nantes"><img alt="dailymotion" src="image/reseauSociaux/dailymotion.png"></a>
+						<a href="http://www.dailymotion.com/Musee_Beaux_Arts_Nantes"><img alt="dailymotion" src="image/reseauSociaux/dailymotion.png"/></a>
 					</th>
 					<th>
-						<a href="https://www.youtube.com/channel/UC-3SdEKl40sgwrRKXeph8Zg"><img alt="youtube" src="image/reseauSociaux/youtube.png"></a>
+						<a href="https://www.youtube.com/channel/UC-3SdEKl40sgwrRKXeph8Zg"><img alt="youtube" src="image/reseauSociaux/youtube.png"/></a>
 					</th>
 					<th>
-						<a href="https://www.thinglink.com/user/515138720840548353/scenes"><img alt="ThingLink" src="image/reseauSociaux/ThingLink_logo.jpg"></a>
+						<a href="https://www.thinglink.com/user/515138720840548353/scenes"><img alt="ThingLink" src="image/reseauSociaux/ThingLink_logo.jpg"/></a>
 					</th>
 					<th>
-						<a href="https://plus.google.com/102027570623723318063/about"><img alt="google+" src="image/reseauSociaux/googleplus-rond.png"></a>
+						<a href="https://plus.google.com/102027570623723318063/about"><img alt="google+" src="image/reseauSociaux/googleplus-rond.png"/></a>
 					</th>
 					<th>
-						<a href="https://www.pinterest.com/facebookmba/"><img alt="pinterest" src="image/reseauSociaux/pinterest-logo.jpeg"></a>
+						<a href="https://www.pinterest.com/facebookmba/"><img alt="pinterest" src="image/reseauSociaux/pinterest-logo.jpeg"/></a>
 					</th>
 					<th>
-						<a href="https://www.flickr.com/photos/mbanantes/"><img alt="flick" src="image/reseauSociaux/flick.JPG"></a>
+						<a href="https://www.flickr.com/photos/mbanantes/"><img alt="flick" src="image/reseauSociaux/flick.JPG"/></a>
 					</th>
 				</tr>
 			</table> <!-- /tableReseau -->
-		</div>
+		</div> <!-- /divReseau -->
 	</body>
 </html>
