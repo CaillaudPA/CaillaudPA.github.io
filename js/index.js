@@ -31,10 +31,9 @@ function changementPage(){
 
 function redimentionnerImage(){
 	$("a [id*=imgPrincipal]").each(function (){
-		largeur = $(window).width();
 
 		var coord = redimensionImage($(this).width(), $(this).height(), $(window).width(), $(window).height());
-		if(coord[1]<800){
+		if(coord[0]<800){
 			this.setAttribute("width",coord[0]);
 			this.setAttribute("height",coord[1]);
 		}
