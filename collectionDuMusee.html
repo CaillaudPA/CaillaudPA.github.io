@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	 	
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--
+		Jquery
+		-->
+		<script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+		<!--
+		Jquery mobile
+		-->
+		<script src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+		
+		<!--
+		perso
+		-->
+		<script type="text/javascript" src="js/acceuil.js"></script>
+		<link rel= "stylesheet" type= "text/css" href= "css/acceuil.css"/>
+		<link rel= "stylesheet" type= "text/css" href= "css/collectionDuMusee.css"/>
+		
+
+		<link rel="SHORTCUT ICON" href="image/favicon.ico">	
+		<title>Musée des Beaux-Arts de Nantes : Accueil</title>
+	</head>
+
+	<body>
+
+
+	<a href="index.html" id="nomSite"><h1 >Musée des Beaux-Arts de Nantes</h1></a>
+	 
+	 	<div data-role="header">
+			<div data-role="navbar" data-theme="c" class="ui-body-a">
+		      <ul >
+		        <li><a href="#menuNavigation" data-icon="grid" data-iconpos="top" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" data-theme="b">Menu</a></li>
+		        <li><a href="http://www.nantes.fr" target="_blank" data-icon="star" data-theme="b">Ville de Nantes</a></li>
+		        <li><a id="loupeRecherche" href="#" data-icon="search" data-theme="b" data-iconpos="top" onclick="afficherInputRecherche()" onblur="enleverInputRecherche()">Recherche</a></li>
+		      </ul>
+		    </div>
+
+
+		    <div data-role="panel" id="menuNavigation" data-display="overlay">
+		    	<ul data-role="listview" data-inset="false" id="ulMenuNavigation">
+					<li class="itemMenu"> <a href="">Collections</a></li>
+					<li class="itemMenu"> <a href="">Expositions</a></li>
+					<li class="itemMenu"> <a href="">Activités</a></li>
+					<li class="itemMenu"> <a href="">Agenda</a></li>
+					<li class="itemMenu"> <a href="">Publics</a></li>
+					<li class="itemMenu"> <a href="">Pratique</a></li>
+					<li class="itemMenu"> <a href="">Presse</a></li>
+					<li class="itemMenu"> <a href="">Projet musée</a></li>
+				</ul>
+		    </div> <!-- /panel -->
+		</div>
+
+			
+
+		<div data-role="main" class="ui-content">
+			<div class="headArticle">
+				<h2>Collections</h2>
+				<form>
+				<select name="select-native-s" id="select-native-s">
+					<option value="collection">Vie des collections</option>
+			        <option value="presentation">Présentation</option>
+			        <option value="visiteVirtuelle">Visite virtuelle</option>		        
+			        <option value="oeuvreneligne">Oeuvres en ligne</option>
+			        <option value="doc">Documentation</option>
+	    		</select>
+		</form>	
+			</div>
+			<p class="bold">
+				Hors les murs Petit Palais, Paris<br/>
+				Collection du musée des beaux-arts<br/>
+				01 octobre 2014<br/>
+				Changement de décor, de Ingres à Polke<br/>
+				1er octobre 2014 - 11 janvier 2015</p>
+
+			<p>
+				Le musée actuellement fermé pour rénovation jusqu'à la fin de l'année 2016 s'invite au Petit Palais pour Changement de décor. <br/>
+				A cette occasion, 7 chefs d'oeuvre sortent des collections:<br/>
+				- Jean - Auguste Dominique Ingres, Portrait de Mme de Senonnes, 1814 - 1816<br/>
+				- James Tissot, Portrait de Mme de Senonnes, copie en grisaille d'après Ingres, 1899<br/>
+				- Sigmar Polke, Sans titre<br/>
+				- Horace Vernet, La Ballade de Lénore, 1839<br/>
+				- Jean-Baptiste-Camille Carot, Démocrite et les Abdéritains - Paysage, 1841<br/>
+				- Paul Delaroche, L'Enfance de Pic de la Mirandole, 1842<br/>
+				- Jean-Léon Gérôme, Le Prisonnier, 1861<br/>
+				L'histoire du Portrait de Mme de Senonnes de Inges<br/><br/>
+			</p>
+
+				<div class="divImg">
+					<a><img id="imgPrincipal6" src="image/imagePrincipale/delaroche.jpg"/></a>
+				</div>
+
+			<p>
+				L’extraordinaire Portrait de Madame de Senonnes par Ingres (1814) fut découvert par hasard chez un brocanteur à Angers en 1853 et acquis immédiatement par le musée. Le tableau était resté en Anjou dans la famille, qui le mit en vente chez un antiquaire. Née Marie Marcoz, le modèle après avoir divorcé, épousa l’envoyé de Napoléon à Rome, le vicomte Alexandre de Senonnes. Selon une rumeur, la belle-famille du modèle n’aurait pas apprécié le mariage roturier du vicomte et aurait mutilé la toile ! Quoi qu’il en soit, le tableau entra au musée de Nantes du vivant même de l’artiste.<br/>
+				Traité comme un aplat sombre, il fixe le modèle en avant. Le visage de Madame de Senonnes, discret emprunt à Raphaël, dessine un ovale à la fois très pur et sensuel, et constitue la source d’arrondis successifs jusqu’au bras droit démesurément allongé. Le corps tout entier est soumis à des licences abstraites par rapport à la stricte anatomie. Mais l’illusion du réel naît du traitement des somptueuses étoffes et des innombrables bijoux, en particulier les bagues aux doigts des mains alanguies. Ce foisonnement d’accessoires, cet excès de coloris francs, vénitiens, rouge et or chatoyants dans la partie inférieure du tableau, renforcent l’étrange présence du visage de Madame de Senonnes isolé sur le fond sombre. Ingres, tel un visiteur familier, signa sur une carte de visite glissée dans le montant du miroir. Après la mort de l’artiste, les critiques, lors des rares expositions parisiennes du tableau, furent toujours louangeuses, mais c’est à Nantes que Breton et Aragon vinrent découvrir Madame de Senonnes et, comme Matisse qui la vit à Paris, ils en restèrent fascinés. Ingres exerça une influence indéniable sur l’art du XXe siècle, par l’audace de ses déformations abstraites, que Matisse et Picasso apprécièrent particulièrement.
+			</p>
+								
+		</div>
+
+
+
+
+		
+
+		
+	</body>
+
+	<footer>
+		<table align="center">
+			<td>
+				<th>
+					<a href="https://www.facebook.com/MuseedesBeauxArtsNantes"><img src="image/reseauSociaux/facebook_rond.png"></a>
+				</th>
+				<th>
+					<a href="https://twitter.com/museedArtnantes"><img src="image/reseauSociaux/twitter-rond2.png"></a>
+				</th>
+				<th>
+					<a href="http://www.dailymotion.com/Musee_Beaux_Arts_Nantes"><img src="image/reseauSociaux/dailymotion.png"></a>
+				</th>
+				<th>
+					<a href="https://www.youtube.com/channel/UC-3SdEKl40sgwrRKXeph8Zg"><img src="image/reseauSociaux/youtube.png"></a>
+				</th>
+				<th>
+					<a href="https://www.thinglink.com/user/515138720840548353/scenes"><img src="image/reseauSociaux/ThingLink_logo.jpg"></a>
+				</th>
+				<th>
+					<a href="https://plus.google.com/102027570623723318063/about"><img src="image/reseauSociaux/googleplus-rond.png"></a>
+				</th>
+				<th>
+					<a href="https://www.pinterest.com/facebookmba/"><img src="image/reseauSociaux/pinterest-logo.jpeg"></a>
+				</th>
+				<th>
+					<a href="https://www.flickr.com/photos/mbanantes/"><img src="image/reseauSociaux/flick.JPG"></a>
+				</th>
+			</td>
+		</table>
+	</footer>
+</html>
