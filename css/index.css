@@ -61,9 +61,9 @@ h3 > a{
 }
 
 #tableReseau{
-	vertical-align: center;
+    margin-left:auto; 
+	margin-right:auto;
 }
-
 
  /*/////////////////////////////////////
 

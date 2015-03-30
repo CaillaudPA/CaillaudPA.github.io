@@ -26,6 +26,11 @@ function enleverInputRecherche(){
 	$('#recherche').css('display', 'none');
 	$('#rechercheDiv').css('display', 'none');
 	$('#loupeRecherche').removeClass("ui-btn-active");
+	
+}
+
+function changementPage(){
+	enleverInputRecherche();
 }
 
 function redimentionnerImage(){
@@ -94,3 +99,4 @@ function recupGet(nomCle){
 		return tmp[positionCle].split("=")[1];
 	};
 }
+
