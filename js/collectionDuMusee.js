@@ -28,6 +28,10 @@ function enleverInputRecherche(){
 	$('#loupeRecherche').removeClass("ui-btn-active");
 }
 
+function changementPage(){
+	enleverInputRecherche();
+}
+
 function redimentionnerImage(){
 	newWidth = $(window).width();
 	newHeight = $(window).width();

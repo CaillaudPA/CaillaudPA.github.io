@@ -72,6 +72,10 @@ function redimensionImage(largeur, hauteur, largeurc, hauteurc) {
     return(coord);
 }
 
+function changementPage(){
+	enleverInputRecherche();
+}
+
 
 function recupGet(nomCle){
 

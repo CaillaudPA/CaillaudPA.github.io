@@ -10,9 +10,6 @@ $('document').ready(function(){
 		redimentionnerImage();
 	});
 
-
-
-
 });
 
 function afficherInputRecherche(){
