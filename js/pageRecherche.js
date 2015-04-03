@@ -16,7 +16,7 @@ function enleverInputRecherche(){
 	$('#loupeRecherche').removeClass("ui-btn-active");
 }
 
-<<<<<<< HEAD
+
 function redimentionnerImage(){
 	newWidth = $(window).width();
 	newHeight = $(window).width();
